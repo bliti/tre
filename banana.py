@@ -21,7 +21,7 @@ r = praw.Reddit('bananapy - member The Robot Enchilads'
 
 r.login(username=banana.username, password=banana.password)
 
-title=''
-text=''
+post_title='Gone Bananas!'
+post_body='Yeah, I know...'
 
-r.submit(banana.subreddit, title, text='text')    
+r.submit(banana.subreddit, post_title, text=post_body)    
