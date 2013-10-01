@@ -3,17 +3,25 @@
 
 #!/usr/bin/env python
 import praw
-import json
+from TRE import TRE
 
 
-#TRE = The Robot Enchilada.
-#Base class for all other robots.
-class TRE(object):
-        
-        
-        def __init__(self, robot_name):
-            with open('settings.json', 'r') as f:
-                settings = json.loads(f.read())
-            self.settings = settings[robot_name] 
-            
+class Bananapy(TRE):
+    pass
+    
+    
+    
 
+banana = Bananapy('bananapy')
+
+r = praw.Reddit('bananapy - member The Robot Enchilads'
+                'v 0.1'
+                'Url: https://github.com/bliti/tre')
+
+
+r.login(username=banana.username, password=banana.password)
+
+title=''
+text=''
+
+r.submit(banana.subreddit, title, text='text')    
