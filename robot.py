@@ -4,7 +4,7 @@ import json
 
 #TRE = The Robot Enchilada.
 #Base class for all other robots.
-class TRE(object):
+class RobotBase(object):
         
         
         def __init__(self, robot_name):

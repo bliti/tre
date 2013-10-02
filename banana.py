@@ -3,10 +3,10 @@
 
 #!/usr/bin/env python
 import praw
-from TRE import TRE
+from robot import RobotBase
 
 
-class Bananapy(TRE):
+class Bananapy(RobotBase):
     pass
     
     
@@ -14,7 +14,7 @@ class Bananapy(TRE):
 
 banana = Bananapy('bananapy')
 
-r = praw.Reddit('bananapy - member The Robot Enchilads'
+r = praw.Reddit('bananapy - member The Robot Enchiladas'
                 'v 0.1'
                 'Url: https://github.com/bliti/tre')
 
